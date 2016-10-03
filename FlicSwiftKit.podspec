@@ -25,11 +25,8 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  A longer description of HomeBridgeProtoBuf in Markdown format.
-    * Think: Why did you write this? What is the focus? What does it do?
-    * CocoaPods will be using this to generate tags, and improve search results.
-    * Try to keep it short, snappy and to the point.
-    * Finally, don't worry about the indent, CocoaPods strips it!
+  Swift library used to control Flic Button using Flic HCI Protocol. Available for iOS, tvOS and macOS.
+    * For now, only tested on macOS with Flic Service Beta 0.0.3 (https://github.com/50ButtonsEach/flic-service-osx)
                    DESC
 
   s.homepage     = "https://git.groriri.me/frajaona/FlicSwiftKit"
@@ -54,7 +51,7 @@ s.license      = { :type => 'Apache License, Version 2.0', :text =>
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-    Copyright 2008 Google Inc.
+    Copyright 2016 Fred Rajaona.
     LICENSE
 }
 
