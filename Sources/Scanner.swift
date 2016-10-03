@@ -71,7 +71,7 @@ public class Scanner {
         switch event.eventType {
         case .advertisementPacket:
             if let data = event.payload {
-                let buttonInfo = ButtonInfo(fromData: data as Data, isAdvertisement: true)
+                let buttonInfo = ScanButtonInfo(fromData: data as Data, isAdvertisement: true)
                 if let button = scannedButtons[buttonInfo.name] {
                     button.update(buttonInfo)
                 } else {

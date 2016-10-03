@@ -81,7 +81,7 @@ public class FlicButton: Equatable {
         return alreadyVerified
     }
     
-    init(info: ButtonInfo, flicSession: FlicSession) {
+    init(info: ScanButtonInfo, flicSession: FlicSession) {
         name = info.name
         bluetoothAddress = info.bluetoothAddress
         rawBluetoothAddress = info.rawBluetoothAddress
@@ -142,7 +142,7 @@ public class FlicButton: Equatable {
         }
     }
     
-    func update(_ info: ButtonInfo) {
+    func update(_ info: ScanButtonInfo) {
         privateMode = info.privateMode
         alreadyVerified = info.alreadyVerified
     }

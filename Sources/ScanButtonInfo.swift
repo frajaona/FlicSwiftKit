@@ -1,5 +1,5 @@
 //
-//  ButtonInfo.swift
+//  ScanButtonInfo.swift
 //  FlicController
 //
 //  Created by Fred Rajaona on 20/07/2016.

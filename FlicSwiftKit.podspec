@@ -25,6 +25,11 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  A longer description of HomeBridgeProtoBuf in Markdown format.
+    * Think: Why did you write this? What is the focus? What does it do?
+    * CocoaPods will be using this to generate tags, and improve search results.
+    * Try to keep it short, snappy and to the point.
+    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
   s.homepage     = "https://git.groriri.me/frajaona/FlicSwiftKit"
@@ -101,8 +106,8 @@ s.license      = { :type => 'Apache License, Version 2.0', :text =>
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Sources", "Sources/**/*.{h,m}"
+  s.exclude_files = "Sources/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
