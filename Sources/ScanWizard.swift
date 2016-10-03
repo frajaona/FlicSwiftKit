@@ -47,13 +47,13 @@ public class ScanWizard {
         self.session = session
     }
     
-    func start() {
+    public func start() {
         let startCommand = getScanWizardCommand(FlicCommand.CommandType.createScanWizard)
         session.tcpSocket?.sendMessage(startCommand.message)
         runStateMachine(.start)
     }
     
-    func cancel() {
+    public func cancel() {
         let startCommand = getScanWizardCommand(FlicCommand.CommandType.cancelScanWizard)
         session.tcpSocket?.sendMessage(startCommand.message)
     }
