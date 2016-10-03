@@ -1,0 +1,1288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4421759770F0E57ACA1313EF /* Pods_FlicSwiftKitTvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7C8DBB7794F9415DE6BF44 /* Pods_FlicSwiftKitTvOS.framework */; };
+		566E79C5825B88B2CA0439B3 /* Pods_FlicSwiftKitMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0045F4CB1C8A7BC384B3D319 /* Pods_FlicSwiftKitMacOSTests.framework */; };
+		5AE74297C6B2C07160E0FD11 /* Pods_FlicSwiftKitiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C2B60AF785A26FE6BE7E38 /* Pods_FlicSwiftKitiOSTests.framework */; };
+		9DDA72384D3C2F2089E7E568 /* Pods_FlicSwiftKitTvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AC22B0D934031FCCCEFA08 /* Pods_FlicSwiftKitTvOSTests.framework */; };
+		C2D99289B9588BE2A871ECE9 /* Pods_FlicSwiftKitiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308D094AE8C49E6F3F54A41D /* Pods_FlicSwiftKitiOS.framework */; };
+		E27D04D22D8D9AD1FF5DE6EA /* Pods_FlicSwiftKitMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B4C94136EF77388A661736 /* Pods_FlicSwiftKitMacOS.framework */; };
+		FC74CA361DA251D8002392B2 /* FlicSwiftKitiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC74CA2D1DA251D8002392B2 /* FlicSwiftKitiOS.framework */; };
+		FC74CA3B1DA251D8002392B2 /* FlicSwiftKitiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA3A1DA251D8002392B2 /* FlicSwiftKitiOSTests.swift */; };
+		FC74CA3D1DA251D8002392B2 /* FlicSwiftKitiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FC74CA2F1DA251D8002392B2 /* FlicSwiftKitiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC74CA6E1DA25229002392B2 /* FlicSwiftKitTvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC74CA651DA25228002392B2 /* FlicSwiftKitTvOS.framework */; };
+		FC74CA731DA25229002392B2 /* FlicSwiftKitTvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA721DA25229002392B2 /* FlicSwiftKitTvOSTests.swift */; };
+		FC74CA751DA25229002392B2 /* FlicSwiftKitTvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FC74CA671DA25229002392B2 /* FlicSwiftKitTvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC74CA8A1DA2525D002392B2 /* FlicSwiftKitMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC74CA811DA2525C002392B2 /* FlicSwiftKitMacOS.framework */; };
+		FC74CA8F1DA2525D002392B2 /* FlicSwiftKitMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA8E1DA2525D002392B2 /* FlicSwiftKitMacOSTests.swift */; };
+		FC74CA911DA2525D002392B2 /* FlicSwiftKitMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FC74CA831DA2525C002392B2 /* FlicSwiftKitMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC74CAAA1DA2571A002392B2 /* BluetoothUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA991DA2571A002392B2 /* BluetoothUtils.swift */; };
+		FC74CAAB1DA2571A002392B2 /* ButtonEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA9A1DA2571A002392B2 /* ButtonEvent.swift */; };
+		FC74CAAC1DA2571A002392B2 /* ScanButtonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA9B1DA2571A002392B2 /* ScanButtonInfo.swift */; };
+		FC74CAAD1DA2571A002392B2 /* ConnectionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA9C1DA2571A002392B2 /* ConnectionEvent.swift */; };
+		FC74CAAE1DA2571A002392B2 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA9D1DA2571A002392B2 /* ConnectionManager.swift */; };
+		FC74CAAF1DA2571A002392B2 /* FlicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA9E1DA2571A002392B2 /* FlicButton.swift */; };
+		FC74CAB01DA2571A002392B2 /* FlicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CA9F1DA2571A002392B2 /* FlicController.swift */; };
+		FC74CAB11DA2571A002392B2 /* FlicControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA01DA2571A002392B2 /* FlicControllerInfo.swift */; };
+		FC74CAB21DA2571A002392B2 /* FlicEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA11DA2571A002392B2 /* FlicEnums.swift */; };
+		FC74CAB31DA2571A002392B2 /* FlicMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA21DA2571A002392B2 /* FlicMessage.swift */; };
+		FC74CAB41DA2571A002392B2 /* FlicSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA31DA2571A002392B2 /* FlicSession.swift */; };
+		FC74CAB51DA2571A002392B2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA41DA2571A002392B2 /* Message.swift */; };
+		FC74CAB61DA2571A002392B2 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA51DA2571A002392B2 /* Scanner.swift */; };
+		FC74CAB71DA2571A002392B2 /* ScanWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA61DA2571A002392B2 /* ScanWizard.swift */; };
+		FC74CAB81DA2571A002392B2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA71DA2571A002392B2 /* Session.swift */; };
+		FC74CAB91DA2571A002392B2 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA81DA2571A002392B2 /* Socket.swift */; };
+		FC74CABA1DA2571A002392B2 /* TcpSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74CAA91DA2571A002392B2 /* TcpSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC74CA371DA251D8002392B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC74CA051DA11AE9002392B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC74CA2C1DA251D8002392B2;
+			remoteInfo = FlicSwiftKitiOS;
+		};
+		FC74CA6F1DA25229002392B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC74CA051DA11AE9002392B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC74CA641DA25228002392B2;
+			remoteInfo = FlicSwiftKitTvOS;
+		};
+		FC74CA8B1DA2525D002392B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC74CA051DA11AE9002392B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC74CA801DA2525C002392B2;
+			remoteInfo = FlicSwiftKitMacOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0045F4CB1C8A7BC384B3D319 /* Pods_FlicSwiftKitMacOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlicSwiftKitMacOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		169181FADE8D4DFD5B953B51 /* Pods-FlicSwiftKitiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitiOSTests/Pods-FlicSwiftKitiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		26889AA3BAD2E41A1174C24A /* Pods-FlicSwiftKitTvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitTvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitTvOS/Pods-FlicSwiftKitTvOS.release.xcconfig"; sourceTree = "<group>"; };
+		26F1208367300E0BECCA84E6 /* Pods-FlicSwiftKitTvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitTvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitTvOS/Pods-FlicSwiftKitTvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		308D094AE8C49E6F3F54A41D /* Pods_FlicSwiftKitiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlicSwiftKitiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39110030746BE9FBF89C9795 /* Pods-FlicSwiftKitMacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitMacOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitMacOS/Pods-FlicSwiftKitMacOS.debug.xcconfig"; sourceTree = "<group>"; };
+		54B4C94136EF77388A661736 /* Pods_FlicSwiftKitMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlicSwiftKitMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AC22B0D934031FCCCEFA08 /* Pods_FlicSwiftKitTvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlicSwiftKitTvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B28BF2C7D05F312D20512E3 /* Pods-FlicSwiftKitiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitiOSTests/Pods-FlicSwiftKitiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		B4C2B60AF785A26FE6BE7E38 /* Pods_FlicSwiftKitiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlicSwiftKitiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E95A27CA881956C4130ED7 /* Pods-FlicSwiftKitTvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitTvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitTvOSTests/Pods-FlicSwiftKitTvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA7C8DBB7794F9415DE6BF44 /* Pods_FlicSwiftKitTvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlicSwiftKitTvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEE34B8999D6242F51173AE /* Pods-FlicSwiftKitMacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitMacOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitMacOSTests/Pods-FlicSwiftKitMacOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		C91607F47DB226E545AED554 /* Pods-FlicSwiftKitMacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitMacOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitMacOSTests/Pods-FlicSwiftKitMacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D13B00A38CB2EABCA6FE7604 /* Pods-FlicSwiftKitTvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitTvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitTvOSTests/Pods-FlicSwiftKitTvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D900BC3DAD1621C6EA5B3B58 /* Pods-FlicSwiftKitiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitiOS/Pods-FlicSwiftKitiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F1EF3F936B03AEB2F9B104C1 /* Pods-FlicSwiftKitiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitiOS/Pods-FlicSwiftKitiOS.release.xcconfig"; sourceTree = "<group>"; };
+		F2227D7EA7B244D510C383D9 /* Pods-FlicSwiftKitMacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlicSwiftKitMacOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlicSwiftKitMacOS/Pods-FlicSwiftKitMacOS.release.xcconfig"; sourceTree = "<group>"; };
+		FC74CA2D1DA251D8002392B2 /* FlicSwiftKitiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlicSwiftKitiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC74CA2F1DA251D8002392B2 /* FlicSwiftKitiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlicSwiftKitiOS.h; sourceTree = "<group>"; };
+		FC74CA301DA251D8002392B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC74CA351DA251D8002392B2 /* FlicSwiftKitiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlicSwiftKitiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC74CA3A1DA251D8002392B2 /* FlicSwiftKitiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlicSwiftKitiOSTests.swift; sourceTree = "<group>"; };
+		FC74CA3C1DA251D8002392B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC74CA651DA25228002392B2 /* FlicSwiftKitTvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlicSwiftKitTvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC74CA671DA25229002392B2 /* FlicSwiftKitTvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlicSwiftKitTvOS.h; sourceTree = "<group>"; };
+		FC74CA681DA25229002392B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC74CA6D1DA25229002392B2 /* FlicSwiftKitTvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlicSwiftKitTvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC74CA721DA25229002392B2 /* FlicSwiftKitTvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlicSwiftKitTvOSTests.swift; sourceTree = "<group>"; };
+		FC74CA741DA25229002392B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC74CA811DA2525C002392B2 /* FlicSwiftKitMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlicSwiftKitMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC74CA831DA2525C002392B2 /* FlicSwiftKitMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlicSwiftKitMacOS.h; sourceTree = "<group>"; };
+		FC74CA841DA2525C002392B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC74CA891DA2525D002392B2 /* FlicSwiftKitMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlicSwiftKitMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC74CA8E1DA2525D002392B2 /* FlicSwiftKitMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlicSwiftKitMacOSTests.swift; sourceTree = "<group>"; };
+		FC74CA901DA2525D002392B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC74CA991DA2571A002392B2 /* BluetoothUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothUtils.swift; path = Sources/BluetoothUtils.swift; sourceTree = "<group>"; };
+		FC74CA9A1DA2571A002392B2 /* ButtonEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonEvent.swift; path = Sources/ButtonEvent.swift; sourceTree = "<group>"; };
+		FC74CA9B1DA2571A002392B2 /* ScanButtonInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanButtonInfo.swift; path = Sources/ScanButtonInfo.swift; sourceTree = "<group>"; };
+		FC74CA9C1DA2571A002392B2 /* ConnectionEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionEvent.swift; path = Sources/ConnectionEvent.swift; sourceTree = "<group>"; };
+		FC74CA9D1DA2571A002392B2 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionManager.swift; path = Sources/ConnectionManager.swift; sourceTree = "<group>"; };
+		FC74CA9E1DA2571A002392B2 /* FlicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlicButton.swift; path = Sources/FlicButton.swift; sourceTree = "<group>"; };
+		FC74CA9F1DA2571A002392B2 /* FlicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlicController.swift; path = Sources/FlicController.swift; sourceTree = "<group>"; };
+		FC74CAA01DA2571A002392B2 /* FlicControllerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlicControllerInfo.swift; path = Sources/FlicControllerInfo.swift; sourceTree = "<group>"; };
+		FC74CAA11DA2571A002392B2 /* FlicEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlicEnums.swift; path = Sources/FlicEnums.swift; sourceTree = "<group>"; };
+		FC74CAA21DA2571A002392B2 /* FlicMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlicMessage.swift; path = Sources/FlicMessage.swift; sourceTree = "<group>"; };
+		FC74CAA31DA2571A002392B2 /* FlicSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlicSession.swift; path = Sources/FlicSession.swift; sourceTree = "<group>"; };
+		FC74CAA41DA2571A002392B2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Sources/Message.swift; sourceTree = "<group>"; };
+		FC74CAA51DA2571A002392B2 /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Scanner.swift; path = Sources/Scanner.swift; sourceTree = "<group>"; };
+		FC74CAA61DA2571A002392B2 /* ScanWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanWizard.swift; path = Sources/ScanWizard.swift; sourceTree = "<group>"; };
+		FC74CAA71DA2571A002392B2 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Sources/Session.swift; sourceTree = "<group>"; };
+		FC74CAA81DA2571A002392B2 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
+		FC74CAA91DA2571A002392B2 /* TcpSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TcpSocket.swift; path = Sources/TcpSocket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC74CA291DA251D8002392B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D99289B9588BE2A871ECE9 /* Pods_FlicSwiftKitiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA321DA251D8002392B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CA361DA251D8002392B2 /* FlicSwiftKitiOS.framework in Frameworks */,
+				5AE74297C6B2C07160E0FD11 /* Pods_FlicSwiftKitiOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA611DA25228002392B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4421759770F0E57ACA1313EF /* Pods_FlicSwiftKitTvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA6A1DA25229002392B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CA6E1DA25229002392B2 /* FlicSwiftKitTvOS.framework in Frameworks */,
+				9DDA72384D3C2F2089E7E568 /* Pods_FlicSwiftKitTvOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA7D1DA2525C002392B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27D04D22D8D9AD1FF5DE6EA /* Pods_FlicSwiftKitMacOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA861DA2525D002392B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CA8A1DA2525D002392B2 /* FlicSwiftKitMacOS.framework in Frameworks */,
+				566E79C5825B88B2CA0439B3 /* Pods_FlicSwiftKitMacOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C438F3EF61144A9182F6550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54B4C94136EF77388A661736 /* Pods_FlicSwiftKitMacOS.framework */,
+				0045F4CB1C8A7BC384B3D319 /* Pods_FlicSwiftKitMacOSTests.framework */,
+				BA7C8DBB7794F9415DE6BF44 /* Pods_FlicSwiftKitTvOS.framework */,
+				60AC22B0D934031FCCCEFA08 /* Pods_FlicSwiftKitTvOSTests.framework */,
+				308D094AE8C49E6F3F54A41D /* Pods_FlicSwiftKitiOS.framework */,
+				B4C2B60AF785A26FE6BE7E38 /* Pods_FlicSwiftKitiOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		374A80229B326548A030EB60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39110030746BE9FBF89C9795 /* Pods-FlicSwiftKitMacOS.debug.xcconfig */,
+				F2227D7EA7B244D510C383D9 /* Pods-FlicSwiftKitMacOS.release.xcconfig */,
+				C91607F47DB226E545AED554 /* Pods-FlicSwiftKitMacOSTests.debug.xcconfig */,
+				BCEE34B8999D6242F51173AE /* Pods-FlicSwiftKitMacOSTests.release.xcconfig */,
+				26F1208367300E0BECCA84E6 /* Pods-FlicSwiftKitTvOS.debug.xcconfig */,
+				26889AA3BAD2E41A1174C24A /* Pods-FlicSwiftKitTvOS.release.xcconfig */,
+				D13B00A38CB2EABCA6FE7604 /* Pods-FlicSwiftKitTvOSTests.debug.xcconfig */,
+				B9E95A27CA881956C4130ED7 /* Pods-FlicSwiftKitTvOSTests.release.xcconfig */,
+				D900BC3DAD1621C6EA5B3B58 /* Pods-FlicSwiftKitiOS.debug.xcconfig */,
+				F1EF3F936B03AEB2F9B104C1 /* Pods-FlicSwiftKitiOS.release.xcconfig */,
+				169181FADE8D4DFD5B953B51 /* Pods-FlicSwiftKitiOSTests.debug.xcconfig */,
+				8B28BF2C7D05F312D20512E3 /* Pods-FlicSwiftKitiOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC74CA041DA11AE9002392B2 = {
+			isa = PBXGroup;
+			children = (
+				FC74CA981DA25370002392B2 /* Sources */,
+				FC74CA2E1DA251D8002392B2 /* FlicSwiftKitiOS */,
+				FC74CA391DA251D8002392B2 /* FlicSwiftKitiOSTests */,
+				FC74CA661DA25229002392B2 /* FlicSwiftKitTvOS */,
+				FC74CA711DA25229002392B2 /* FlicSwiftKitTvOSTests */,
+				FC74CA821DA2525C002392B2 /* FlicSwiftKitMacOS */,
+				FC74CA8D1DA2525D002392B2 /* FlicSwiftKitMacOSTests */,
+				FC74CA0F1DA11AE9002392B2 /* Products */,
+				374A80229B326548A030EB60 /* Pods */,
+				0C438F3EF61144A9182F6550 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC74CA0F1DA11AE9002392B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CA2D1DA251D8002392B2 /* FlicSwiftKitiOS.framework */,
+				FC74CA351DA251D8002392B2 /* FlicSwiftKitiOSTests.xctest */,
+				FC74CA651DA25228002392B2 /* FlicSwiftKitTvOS.framework */,
+				FC74CA6D1DA25229002392B2 /* FlicSwiftKitTvOSTests.xctest */,
+				FC74CA811DA2525C002392B2 /* FlicSwiftKitMacOS.framework */,
+				FC74CA891DA2525D002392B2 /* FlicSwiftKitMacOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC74CA2E1DA251D8002392B2 /* FlicSwiftKitiOS */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CA2F1DA251D8002392B2 /* FlicSwiftKitiOS.h */,
+				FC74CA301DA251D8002392B2 /* Info.plist */,
+			);
+			path = FlicSwiftKitiOS;
+			sourceTree = "<group>";
+		};
+		FC74CA391DA251D8002392B2 /* FlicSwiftKitiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CA3A1DA251D8002392B2 /* FlicSwiftKitiOSTests.swift */,
+				FC74CA3C1DA251D8002392B2 /* Info.plist */,
+			);
+			path = FlicSwiftKitiOSTests;
+			sourceTree = "<group>";
+		};
+		FC74CA661DA25229002392B2 /* FlicSwiftKitTvOS */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CA671DA25229002392B2 /* FlicSwiftKitTvOS.h */,
+				FC74CA681DA25229002392B2 /* Info.plist */,
+			);
+			path = FlicSwiftKitTvOS;
+			sourceTree = "<group>";
+		};
+		FC74CA711DA25229002392B2 /* FlicSwiftKitTvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CA721DA25229002392B2 /* FlicSwiftKitTvOSTests.swift */,
+				FC74CA741DA25229002392B2 /* Info.plist */,
+			);
+			path = FlicSwiftKitTvOSTests;
+			sourceTree = "<group>";
+		};
+		FC74CA821DA2525C002392B2 /* FlicSwiftKitMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CA831DA2525C002392B2 /* FlicSwiftKitMacOS.h */,
+				FC74CA841DA2525C002392B2 /* Info.plist */,
+			);
+			path = FlicSwiftKitMacOS;
+			sourceTree = "<group>";
+		};
+		FC74CA8D1DA2525D002392B2 /* FlicSwiftKitMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CA8E1DA2525D002392B2 /* FlicSwiftKitMacOSTests.swift */,
+				FC74CA901DA2525D002392B2 /* Info.plist */,
+			);
+			path = FlicSwiftKitMacOSTests;
+			sourceTree = "<group>";
+		};
+		FC74CA981DA25370002392B2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CABF1DA257E6002392B2 /* Internal */,
+				FC74CA9F1DA2571A002392B2 /* FlicController.swift */,
+				FC74CA9D1DA2571A002392B2 /* ConnectionManager.swift */,
+				FC74CAA61DA2571A002392B2 /* ScanWizard.swift */,
+				FC74CAA51DA2571A002392B2 /* Scanner.swift */,
+				FC74CA9E1DA2571A002392B2 /* FlicButton.swift */,
+				FC74CA991DA2571A002392B2 /* BluetoothUtils.swift */,
+				FC74CAA11DA2571A002392B2 /* FlicEnums.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		FC74CABB1DA2574C002392B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CAA41DA2571A002392B2 /* Message.swift */,
+				FC74CAA71DA2571A002392B2 /* Session.swift */,
+				FC74CAA81DA2571A002392B2 /* Socket.swift */,
+				FC74CAA91DA2571A002392B2 /* TcpSocket.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FC74CABF1DA257E6002392B2 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				FC74CABB1DA2574C002392B2 /* Model */,
+				FC74CAA21DA2571A002392B2 /* FlicMessage.swift */,
+				FC74CA9B1DA2571A002392B2 /* ScanButtonInfo.swift */,
+				FC74CA9C1DA2571A002392B2 /* ConnectionEvent.swift */,
+				FC74CA9A1DA2571A002392B2 /* ButtonEvent.swift */,
+				FC74CAA31DA2571A002392B2 /* FlicSession.swift */,
+				FC74CAA01DA2571A002392B2 /* FlicControllerInfo.swift */,
+			);
+			name = Internal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FC74CA2A1DA251D8002392B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CA3D1DA251D8002392B2 /* FlicSwiftKitiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA621DA25228002392B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CA751DA25229002392B2 /* FlicSwiftKitTvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA7E1DA2525C002392B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CA911DA2525D002392B2 /* FlicSwiftKitMacOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FC74CA2C1DA251D8002392B2 /* FlicSwiftKitiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC74CA3E1DA251D8002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitiOS" */;
+			buildPhases = (
+				6446CE7C864F2389A92BB4A5 /* [CP] Check Pods Manifest.lock */,
+				FC74CA281DA251D8002392B2 /* Sources */,
+				FC74CA291DA251D8002392B2 /* Frameworks */,
+				FC74CA2A1DA251D8002392B2 /* Headers */,
+				FC74CA2B1DA251D8002392B2 /* Resources */,
+				991513CA13856BA95555FC1F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlicSwiftKitiOS;
+			productName = FlicSwiftKitiOS;
+			productReference = FC74CA2D1DA251D8002392B2 /* FlicSwiftKitiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC74CA341DA251D8002392B2 /* FlicSwiftKitiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC74CA411DA251D8002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitiOSTests" */;
+			buildPhases = (
+				C78EB5EE551359C72BBF914B /* [CP] Check Pods Manifest.lock */,
+				FC74CA311DA251D8002392B2 /* Sources */,
+				FC74CA321DA251D8002392B2 /* Frameworks */,
+				FC74CA331DA251D8002392B2 /* Resources */,
+				6BDD013661CAC3324A33CE40 /* [CP] Embed Pods Frameworks */,
+				07FC1C1E9467784480869538 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC74CA381DA251D8002392B2 /* PBXTargetDependency */,
+			);
+			name = FlicSwiftKitiOSTests;
+			productName = FlicSwiftKitiOSTests;
+			productReference = FC74CA351DA251D8002392B2 /* FlicSwiftKitiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC74CA641DA25228002392B2 /* FlicSwiftKitTvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC74CA761DA25229002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitTvOS" */;
+			buildPhases = (
+				B8F97686A9090AE28F6167F4 /* [CP] Check Pods Manifest.lock */,
+				FC74CA601DA25228002392B2 /* Sources */,
+				FC74CA611DA25228002392B2 /* Frameworks */,
+				FC74CA621DA25228002392B2 /* Headers */,
+				FC74CA631DA25228002392B2 /* Resources */,
+				5B71AF0316F978C7B29E459B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlicSwiftKitTvOS;
+			productName = FlicSwiftKitTvOS;
+			productReference = FC74CA651DA25228002392B2 /* FlicSwiftKitTvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC74CA6C1DA25229002392B2 /* FlicSwiftKitTvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC74CA791DA25229002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitTvOSTests" */;
+			buildPhases = (
+				AE3CBBA641421E9DF005BF5F /* [CP] Check Pods Manifest.lock */,
+				FC74CA691DA25229002392B2 /* Sources */,
+				FC74CA6A1DA25229002392B2 /* Frameworks */,
+				FC74CA6B1DA25229002392B2 /* Resources */,
+				2032D274D4BA2BC293E3388C /* [CP] Embed Pods Frameworks */,
+				C67BD621E62727769F339B94 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC74CA701DA25229002392B2 /* PBXTargetDependency */,
+			);
+			name = FlicSwiftKitTvOSTests;
+			productName = FlicSwiftKitTvOSTests;
+			productReference = FC74CA6D1DA25229002392B2 /* FlicSwiftKitTvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC74CA801DA2525C002392B2 /* FlicSwiftKitMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC74CA921DA2525D002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitMacOS" */;
+			buildPhases = (
+				63D5284B3CDF622588B9603A /* [CP] Check Pods Manifest.lock */,
+				FC74CA7C1DA2525C002392B2 /* Sources */,
+				FC74CA7D1DA2525C002392B2 /* Frameworks */,
+				FC74CA7E1DA2525C002392B2 /* Headers */,
+				FC74CA7F1DA2525C002392B2 /* Resources */,
+				6231207E1A77B0447B22B8EF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlicSwiftKitMacOS;
+			productName = FlicSwiftKitMacOS;
+			productReference = FC74CA811DA2525C002392B2 /* FlicSwiftKitMacOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC74CA881DA2525D002392B2 /* FlicSwiftKitMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC74CA951DA2525D002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitMacOSTests" */;
+			buildPhases = (
+				59792DC5DBF69ADEB1229CFE /* [CP] Check Pods Manifest.lock */,
+				FC74CA851DA2525D002392B2 /* Sources */,
+				FC74CA861DA2525D002392B2 /* Frameworks */,
+				FC74CA871DA2525D002392B2 /* Resources */,
+				768D34453C74859E71A0F060 /* [CP] Embed Pods Frameworks */,
+				E1741AF57E1B57BC328C223C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC74CA8C1DA2525D002392B2 /* PBXTargetDependency */,
+			);
+			name = FlicSwiftKitMacOSTests;
+			productName = FlicSwiftKitMacOSTests;
+			productReference = FC74CA891DA2525D002392B2 /* FlicSwiftKitMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC74CA051DA11AE9002392B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Fred Rajaona";
+				TargetAttributes = {
+					FC74CA2C1DA251D8002392B2 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					FC74CA341DA251D8002392B2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					FC74CA641DA25228002392B2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					FC74CA6C1DA25229002392B2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					FC74CA801DA2525C002392B2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					FC74CA881DA2525D002392B2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FC74CA081DA11AE9002392B2 /* Build configuration list for PBXProject "FlicSwiftKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC74CA041DA11AE9002392B2;
+			productRefGroup = FC74CA0F1DA11AE9002392B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC74CA2C1DA251D8002392B2 /* FlicSwiftKitiOS */,
+				FC74CA341DA251D8002392B2 /* FlicSwiftKitiOSTests */,
+				FC74CA641DA25228002392B2 /* FlicSwiftKitTvOS */,
+				FC74CA6C1DA25229002392B2 /* FlicSwiftKitTvOSTests */,
+				FC74CA801DA2525C002392B2 /* FlicSwiftKitMacOS */,
+				FC74CA881DA2525D002392B2 /* FlicSwiftKitMacOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC74CA2B1DA251D8002392B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA331DA251D8002392B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA631DA25228002392B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA6B1DA25229002392B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA7F1DA2525C002392B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA871DA2525D002392B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07FC1C1E9467784480869538 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlicSwiftKitiOSTests/Pods-FlicSwiftKitiOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2032D274D4BA2BC293E3388C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlicSwiftKitTvOSTests/Pods-FlicSwiftKitTvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59792DC5DBF69ADEB1229CFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B71AF0316F978C7B29E459B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlicSwiftKitTvOS/Pods-FlicSwiftKitTvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6231207E1A77B0447B22B8EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlicSwiftKitMacOS/Pods-FlicSwiftKitMacOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63D5284B3CDF622588B9603A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6446CE7C864F2389A92BB4A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6BDD013661CAC3324A33CE40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlicSwiftKitiOSTests/Pods-FlicSwiftKitiOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		768D34453C74859E71A0F060 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlicSwiftKitMacOSTests/Pods-FlicSwiftKitMacOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		991513CA13856BA95555FC1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlicSwiftKitiOS/Pods-FlicSwiftKitiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3CBBA641421E9DF005BF5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8F97686A9090AE28F6167F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C67BD621E62727769F339B94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlicSwiftKitTvOSTests/Pods-FlicSwiftKitTvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C78EB5EE551359C72BBF914B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1741AF57E1B57BC328C223C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlicSwiftKitMacOSTests/Pods-FlicSwiftKitMacOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC74CA281DA251D8002392B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CAB91DA2571A002392B2 /* Socket.swift in Sources */,
+				FC74CAB01DA2571A002392B2 /* FlicController.swift in Sources */,
+				FC74CAB21DA2571A002392B2 /* FlicEnums.swift in Sources */,
+				FC74CAB11DA2571A002392B2 /* FlicControllerInfo.swift in Sources */,
+				FC74CAB71DA2571A002392B2 /* ScanWizard.swift in Sources */,
+				FC74CAAE1DA2571A002392B2 /* ConnectionManager.swift in Sources */,
+				FC74CAB81DA2571A002392B2 /* Session.swift in Sources */,
+				FC74CAAF1DA2571A002392B2 /* FlicButton.swift in Sources */,
+				FC74CAB31DA2571A002392B2 /* FlicMessage.swift in Sources */,
+				FC74CABA1DA2571A002392B2 /* TcpSocket.swift in Sources */,
+				FC74CAB61DA2571A002392B2 /* Scanner.swift in Sources */,
+				FC74CAAB1DA2571A002392B2 /* ButtonEvent.swift in Sources */,
+				FC74CAAC1DA2571A002392B2 /* ScanButtonInfo.swift in Sources */,
+				FC74CAB41DA2571A002392B2 /* FlicSession.swift in Sources */,
+				FC74CAB51DA2571A002392B2 /* Message.swift in Sources */,
+				FC74CAAD1DA2571A002392B2 /* ConnectionEvent.swift in Sources */,
+				FC74CAAA1DA2571A002392B2 /* BluetoothUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA311DA251D8002392B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CA3B1DA251D8002392B2 /* FlicSwiftKitiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA601DA25228002392B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA691DA25229002392B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CA731DA25229002392B2 /* FlicSwiftKitTvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA7C1DA2525C002392B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC74CA851DA2525D002392B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC74CA8F1DA2525D002392B2 /* FlicSwiftKitMacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC74CA381DA251D8002392B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC74CA2C1DA251D8002392B2 /* FlicSwiftKitiOS */;
+			targetProxy = FC74CA371DA251D8002392B2 /* PBXContainerItemProxy */;
+		};
+		FC74CA701DA25229002392B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC74CA641DA25228002392B2 /* FlicSwiftKitTvOS */;
+			targetProxy = FC74CA6F1DA25229002392B2 /* PBXContainerItemProxy */;
+		};
+		FC74CA8C1DA2525D002392B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC74CA801DA2525C002392B2 /* FlicSwiftKitMacOS */;
+			targetProxy = FC74CA8B1DA2525D002392B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FC74CA201DA11AE9002392B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC74CA211DA11AE9002392B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC74CA3F1DA251D8002392B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D900BC3DAD1621C6EA5B3B58 /* Pods-FlicSwiftKitiOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FlicSwiftKitiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FC74CA401DA251D8002392B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1EF3F936B03AEB2F9B104C1 /* Pods-FlicSwiftKitiOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FlicSwiftKitiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FC74CA421DA251D8002392B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 169181FADE8D4DFD5B953B51 /* Pods-FlicSwiftKitiOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FlicSwiftKitiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FC74CA431DA251D8002392B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B28BF2C7D05F312D20512E3 /* Pods-FlicSwiftKitiOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FlicSwiftKitiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FC74CA771DA25229002392B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F1208367300E0BECCA84E6 /* Pods-FlicSwiftKitTvOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FlicSwiftKitTvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitTvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		FC74CA781DA25229002392B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26889AA3BAD2E41A1174C24A /* Pods-FlicSwiftKitTvOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FlicSwiftKitTvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitTvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		FC74CA7A1DA25229002392B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D13B00A38CB2EABCA6FE7604 /* Pods-FlicSwiftKitTvOSTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FlicSwiftKitTvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitTvOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		FC74CA7B1DA25229002392B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9E95A27CA881956C4130ED7 /* Pods-FlicSwiftKitTvOSTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FlicSwiftKitTvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitTvOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		FC74CA931DA2525D002392B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39110030746BE9FBF89C9795 /* Pods-FlicSwiftKitMacOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = FlicSwiftKitMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FC74CA941DA2525D002392B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2227D7EA7B244D510C383D9 /* Pods-FlicSwiftKitMacOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = FlicSwiftKitMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FC74CA961DA2525D002392B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91607F47DB226E545AED554 /* Pods-FlicSwiftKitMacOSTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlicSwiftKitMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FC74CA971DA2525D002392B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEE34B8999D6242F51173AE /* Pods-FlicSwiftKitMacOSTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlicSwiftKitMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doudou.FlicSwiftKitMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC74CA081DA11AE9002392B2 /* Build configuration list for PBXProject "FlicSwiftKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC74CA201DA11AE9002392B2 /* Debug */,
+				FC74CA211DA11AE9002392B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC74CA3E1DA251D8002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC74CA3F1DA251D8002392B2 /* Debug */,
+				FC74CA401DA251D8002392B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC74CA411DA251D8002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC74CA421DA251D8002392B2 /* Debug */,
+				FC74CA431DA251D8002392B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC74CA761DA25229002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitTvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC74CA771DA25229002392B2 /* Debug */,
+				FC74CA781DA25229002392B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC74CA791DA25229002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitTvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC74CA7A1DA25229002392B2 /* Debug */,
+				FC74CA7B1DA25229002392B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC74CA921DA2525D002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC74CA931DA2525D002392B2 /* Debug */,
+				FC74CA941DA2525D002392B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC74CA951DA2525D002392B2 /* Build configuration list for PBXNativeTarget "FlicSwiftKitMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC74CA961DA2525D002392B2 /* Debug */,
+				FC74CA971DA2525D002392B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC74CA051DA11AE9002392B2 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_FlicSwiftKitTvOSTests {
+  umbrella header "Pods-FlicSwiftKitTvOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

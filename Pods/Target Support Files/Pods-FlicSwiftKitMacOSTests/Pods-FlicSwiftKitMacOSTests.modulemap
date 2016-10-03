@@ -1,0 +1,6 @@
+framework module Pods_FlicSwiftKitMacOSTests {
+  umbrella header "Pods-FlicSwiftKitMacOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
