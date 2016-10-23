@@ -15,7 +15,11 @@
  */
 
 import Foundation
+#if SWIFT_PACKAGE
+import SocksCore
+#else
 import socks
+#endif
 
 protocol TcpSocksSocketDelegate {
     func onConnected(to socket: TcpSocksSocket)
