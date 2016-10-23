@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FlicSwiftKit"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "Swift library used to control Flic Button using Flic HCI Protocol. Available for iOS, tvOS and macOS"
 
   # This description is used to generate tags and improve search results.
@@ -94,7 +94,6 @@ s.license      = { :type => 'Apache License, Version 2.0', :text =>
 
   s.source       = { :git => "https://git.groriri.me/frajaona/FlicSwiftKit.git", :tag => "#{s.version}" }
 
-
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -104,48 +103,13 @@ s.license      = { :type => 'Apache License, Version 2.0', :text =>
   #
 
   s.source_files  = "Sources", "Sources/**/*.{h,m}"
-  s.exclude_files = "Sources/Exclude"
+  s.ios.exclude_files = "Sources/FlicSocksSocket.swift", "Sources/TcpSocksSocket.swift"
+  s.tvos.exclude_files = "Sources/FlicSocksSocket.swift", "Sources/TcpSocksSocket.swift"
+  s.osx.exclude_files = "Sources/FlicCASSocket.swift", "Sources/TcpCASSocket.swift"
 
-  # s.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
-
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
-
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # s.requires_arc = true
-
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
-  s.dependency 'CocoaAsyncSocket', '~> 7.5.0'
+  
+  s.ios.dependency 'CocoaAsyncSocket', '~> 7.5.0'
+  s.tvos.dependency 'CocoaAsyncSocket', '~> 7.5.0'
+  s.osx.dependency 'socks', '~> 1.0.2'
 
 end

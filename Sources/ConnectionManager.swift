@@ -142,7 +142,7 @@ public class ConnectionManager {
         var autoDisconnectTime = UInt16(60)
         data.append(&autoDisconnectTime, length: 2)
         let command = FlicCommand(commandType: FlicCommand.CommandType.createConnectionChannel, data: data as Data)
-        session.tcpSocket?.sendMessage(command.message)
+        session.sendMessage(command.message)
         return connectionId
     }
     
@@ -150,7 +150,7 @@ public class ConnectionManager {
         let data = NSMutableData()
         data.append(rawBluetoothAddress, length: rawBluetoothAddress.count)
         let command = FlicCommand(commandType: FlicCommand.CommandType.forceDisconnect, data: data as Data)
-        session.tcpSocket?.sendMessage(command.message)
+        session.sendMessage(command.message)
     }
     
     private func getNextAvailableConnectionId() -> UInt32 {

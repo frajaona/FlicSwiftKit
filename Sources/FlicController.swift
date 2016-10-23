@@ -27,7 +27,11 @@ public class FlicController {
     
     public static let sharedInstance = FlicController()
     
-    fileprivate var session = FlicSession()
+#if os(OSX)
+    fileprivate var session = FlicSession(socket: FlicSocksSocket())
+#else
+    fileprivate var session = FlicSession(socket: FlicCASSocket())
+#endif
     
     fileprivate var info: FlicControllerInfo?
     
@@ -85,7 +89,7 @@ public class FlicController {
     
     public func reloadInfos() {
         if session.isConnected() {
-            session.tcpSocket?.sendMessage(FlicCommand(commandType: FlicCommand.CommandType.getInfo, data: nil).message)
+            session.sendMessage(FlicCommand(commandType: FlicCommand.CommandType.getInfo, data: nil).message)
         }
     }
 }
@@ -105,7 +109,7 @@ extension FlicController: FlicSessionDelegate {
             
         case .newVerifiedButton:
             // Send a GetInfo to update the verified button list and connect to the new button
-            session.tcpSocket?.sendMessage(FlicCommand(commandType: FlicCommand.CommandType.getInfo, data: nil).message)
+            session.sendMessage(FlicCommand(commandType: FlicCommand.CommandType.getInfo, data: nil).message)
             
         case .scanWizardFoundPrivateButton, .scanWizardFoundPublicButton, .scanWizardButtonConnected, .scanWizardCompleted:
             scanWizard.handleEvent(event)

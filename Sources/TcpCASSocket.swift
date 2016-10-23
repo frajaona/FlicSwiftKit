@@ -18,7 +18,7 @@ import Foundation
 
 import CocoaAsyncSocket
 
-struct TcpSocket<T: Message>: Socket {
+struct TcpCASSocket<T: Message>: Socket {
     
     private let delegate: GCDAsyncSocketDelegate
     

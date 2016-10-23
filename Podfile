@@ -1,8 +1,15 @@
+source 'https://git.groriri.me/frajaona/privatepods.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
 
-def pods()
+def cas_pods()
 	pod 'CocoaAsyncSocket', '~> 7.5.0'
+end
+
+def socks_pods()
+  pod 'socks', '~> 1.0.2'
 end
 
 target 'FlicSwiftKitiOS' do
@@ -10,7 +17,7 @@ target 'FlicSwiftKitiOS' do
   use_frameworks!
 
   # Pods for FlicSwiftKitiOS
-  pods()
+  cas_pods()
 
   target 'FlicSwiftKitiOSTests' do
     inherit! :search_paths
@@ -24,7 +31,7 @@ target 'FlicSwiftKitMacOS' do
   use_frameworks!
 
   # Pods for FlicSwiftKitMacOS
-  pods()
+  socks_pods()
 
   target 'FlicSwiftKitMacOSTests' do
     inherit! :search_paths
@@ -38,7 +45,7 @@ target 'FlicSwiftKitTvOS' do
   use_frameworks!
 
   # Pods for FlicSwiftKitTvOS
-  pods()
+  cas_pods()
 
   target 'FlicSwiftKitTvOSTests' do
     inherit! :search_paths

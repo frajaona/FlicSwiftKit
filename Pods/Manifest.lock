@@ -2,13 +2,25 @@ PODS:
   - CocoaAsyncSocket (7.5.0):
     - CocoaAsyncSocket/GCD (= 7.5.0)
   - CocoaAsyncSocket/GCD (7.5.0)
+  - socks (1.0.2)
 
 DEPENDENCIES:
   - CocoaAsyncSocket (~> 7.5.0)
+  - socks (from `https://github.com/frajaona/socks.git`)
+
+EXTERNAL SOURCES:
+  socks:
+    :git: https://github.com/frajaona/socks.git
+
+CHECKOUT OPTIONS:
+  socks:
+    :commit: b74c691fd2fbcd6aa279b053ee2c8bdc20e57a04
+    :git: https://github.com/frajaona/socks.git
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
+  socks: 71b21d9d767e6c01577233864f33bfdcbf9068b9
 
-PODFILE CHECKSUM: f89df0774d48282a0061c615517dca06b89197ac
+PODFILE CHECKSUM: 5bb469741930d940a81f2f416b4b2c1de1ec5634
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.2

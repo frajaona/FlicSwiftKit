@@ -1,0 +1,20 @@
+{
+  "name": "socks",
+  "version": "1.0.2",
+  "summary": "Pure-Swift Sockets: TCP, UDP; Client, Server; Linux, OS X.",
+  "description": "The package provides two libraries: `SocksCore` and `Socks`.\n- `SocksCore` is just a Swift wrapper of the Berkeley sockets API with minimal differences. It is meant to be an easy way to use the low level API without having to deal with Swift/C interop.\n- `Socks` is a library providing common usecases built on top of `SocksCore` - a simple `TCPClient`, `SynchronousTCPServer` etc.\n\nIf you're building a HTTP server, you'll probably want to use the `TCPClient`, without having to worry about its implementation details. However, if you need the low-level sockets API, just import `SocksCore` and use that instead.\n\n> Pure-Swift Sockets. Linux & OS X ready.",
+  "homepage": "https://github.com/vapor/socks.git",
+  "license": "MIT",
+  "authors": "Honza Dvorsky & Matthias Kreileder",
+  "platforms": {
+    "osx": "10.10"
+  },
+  "source": {
+    "git": "https://github.com/frajaona/socks.git",
+    "tag": "1.0.2"
+  },
+  "source_files": [
+    "Sources/SocksCore/**/*.swift",
+    "Sources/Socks/**/*.swift"
+  ]
+}

@@ -20,4 +20,5 @@ protocol Session {
     func start()
     func stop()
     func isConnected() -> Bool
+    func sendMessage<T: Message>(_ message: T, address: String)
 }

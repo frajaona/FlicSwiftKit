@@ -44,7 +44,7 @@ public class Scanner {
         if !scanning {
             scanning = true
             let startCommand = getCommand(FlicCommand.CommandType.createScanner)
-            session.tcpSocket?.sendMessage(startCommand.message)
+            session.sendMessage(startCommand.message)
         }
     }
     
@@ -52,7 +52,7 @@ public class Scanner {
         if scanning {
             scanning = false
             let stopCommand = getCommand(FlicCommand.CommandType.removeScanner)
-            session.tcpSocket?.sendMessage(stopCommand.message)
+            session.sendMessage(stopCommand.message)
             scannedButtons.removeAll()
         }
     }
