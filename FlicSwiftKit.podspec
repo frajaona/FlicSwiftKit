@@ -110,6 +110,6 @@ s.license      = { :type => 'Apache License, Version 2.0', :text =>
   
   s.ios.dependency 'CocoaAsyncSocket', '~> 7.5.0'
   s.tvos.dependency 'CocoaAsyncSocket', '~> 7.5.0'
-  s.osx.dependency 'socks', '~> 1.0.2'
+  s.osx.dependency 'socks', '~> 1.0.3'
 
 end
