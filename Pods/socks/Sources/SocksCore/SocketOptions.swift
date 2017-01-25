@@ -75,6 +75,21 @@ extension RawSocket {
         }
     }
     
+
+    public var allowBroadcast: Bool {
+        nonmutating set {
+            try! Self.setBoolOption(descriptor: descriptor,
+                                    level: SOL_SOCKET,
+                                    name: SO_BROADCAST,
+                                    value: newValue)
+        }
+        get {
+            return try! Self.getBoolOption(descriptor: descriptor,
+                                           level: SOL_SOCKET,
+                                           name: SO_BROADCAST)
+        }
+    }
+
     /// Specify the receiving timeout until reporting an error
     /// Zero timeval means wait forever
     public var receivingTimeout: timeval {

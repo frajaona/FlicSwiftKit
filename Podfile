@@ -9,7 +9,7 @@ def cas_pods()
 end
 
 def socks_pods()
-  pod 'socks', '~> 1.0.2'
+  pod 'socks', '~> 1.0.3'
 end
 
 target 'FlicSwiftKitiOS' do

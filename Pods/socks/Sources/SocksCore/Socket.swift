@@ -46,6 +46,10 @@ extension Socket {
             try setOption(descriptor: descriptor, level: SOL_SOCKET, name: SO_REUSEADDR, value: 1)
         }
         
+        if config.allowBroadcast {
+            try setOption(descriptor: descriptor, level: SOL_SOCKET, name: SO_BROADCAST, value: 1)
+        }
+
         try disableSIGPIPE(descriptor: descriptor)
         
         return descriptor
@@ -62,6 +66,7 @@ public struct SocketConfig {
     public let socketType: SocketType
     public let protocolType: Protocol
     public var reuseAddress: Bool = true
+    public var allowBroadcast: Bool = true
     
     public init(addressFamily: AddressFamily, socketType: SocketType, protocolType: Protocol){
         self.addressFamily = addressFamily

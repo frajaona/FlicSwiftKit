@@ -33,6 +33,7 @@ public class UDPInternetSocket: InternetSocket {
         self.address = address
 
         self.reuseAddress = true
+        self.allowBroadcast = true
     }
 
     public convenience init(address: InternetAddress) throws {
@@ -83,5 +84,11 @@ public class UDPInternetSocket: InternetSocket {
             destination.rawLen
         )
         guard sentLen == len else { throw SocksError(.sendFailedToSendAllBytes) }
+    }
+
+    public func sendto(data: [UInt8], ip: String, port: UInt16) throws {
+        var config = self.config
+        let address = try InternetAddress(hostname: ip, port: port).resolve(with: &config)
+        try self.sendto(data: data, address: address)
     }
 }
