@@ -17,7 +17,7 @@
 import Foundation
 import CocoaAsyncSocket
 
-class FlicCASSocket: FlicSocket {
+class FlicCASSocket: NSObject, FlicSocket {
     
     var tcpSocket: Socket? {
         return rawSocket
